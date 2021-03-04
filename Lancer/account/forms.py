@@ -22,7 +22,7 @@ class FreelancerRegForm(forms.ModelForm):
         cd = self.cleaned_data
         if cd['password'] != cd['password2']:
             raise forms.ValidationError('Passwords don\'t match.')
-            return cd['password2']
+        return cd['password2']
 
 
 class EmployerRegForm(forms.ModelForm):
@@ -38,4 +38,4 @@ class EmployerRegForm(forms.ModelForm):
         cd = self.cleaned_data
         if cd['password'] != cd['password2']:
             raise forms.ValidationError('Passwords don\'t match.')
-            return cd['password2']
+        return cd['password2']
