@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils import timezone
+from django.conf import settings
 
 
 #TODO: CREATE TAGS TO REPRESENTS THE SKILLS FOR AN EMPLOYEE TO CHOSE REQUIRED SKILLS FOR THE JOB
@@ -26,6 +27,9 @@ class Posts(models.Model):
     updated = models.DateTimeField(auto_now_add=True)
     status = models.CharField(
         max_length=10, choices=STATUS_CHOICES, default='draft')
+    bids = models.ManyToManyField(settings.AUTH_USER_MODEL,
+                                  related_name='bidders',
+                                  blank=True)
 
     #Todo: add a conical url. Absolute url to see details about a post
     class Meta:
