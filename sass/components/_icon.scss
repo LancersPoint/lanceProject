@@ -1,0 +1,32 @@
+.icon{
+    cursor: pointer;
+    padding: 5px;
+
+  
+
+    &--grey{
+        color:$color-grey-dark-2;
+    }
+    &--notify{
+        &.active{
+            position: relative;
+            &::after{
+                content: "";
+                background: $color-active;
+                position: absolute;
+                right:  0;
+                top: 0;
+                width: 7px;
+                height: 7px;
+                transform: translate(-3px,3px);
+                border-radius: 50%;
+                border: 1.5px solid $color-white;
+            }
+    
+        }
+        &:hover{
+            transition: color .4s;
+            color: $color-primary-dark;
+        }
+    }
+}

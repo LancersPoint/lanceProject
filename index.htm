@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="images/logos/1615836169185_lancerspoint-logo-2.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ba80ca1c79.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Avenir">
+    <title>Lancer Point | Admin Panel</title>
+</head>
+<body>
+    <div class="navigation">
+        <div class="navigation__logo-box">
+            <img src="images/logos/1615836166736_lanserpoint-point-long.png" alt="Lancer point logo" class="navigation__logo"/>
+        </div>
+
+        <div class="navigation__search-box">
+            <i class="fas fa-search navigation__search-icon icon icon--grey"></i>
+            <input type="text" class="navigation__search-input" placeholder="search transitions, invoices or help">
+        </div>
+        
+        <div class="navigation__icon-box">
+            <i class="fas fa-globe icon icon--grey icon--notify"></i>
+            <i class="fas fa-comments icon icon--grey icon--notify"></i>
+            <i class="fas fa-bell icon icon--grey active icon--notify"></i>
+        </div>
+
+        <a href="#" class="navigation__logout-link">
+            <i class="navigation__logout-icon icon fas fa-bed"></i>
+            <span>Log out</span>
+        </a>
+    </div>
+    <main>
+      <aside class="aside">
+            <nav class="asiide__nav">
+                <ul class="aside__list">
+                    <li class="aside__item active">
+                        <i class="fas fa-chart-area aside__icon icon"></i>
+                        <a href="#" class="aside__link">Dashboard</a>
+                    </li>
+                    <li class="aside__item">
+                        <i class="far fa-envelope aside__icon icon"></i>
+                        <a href="#" class="aside__link">Inbox</a>
+                    </li>
+                    <li class="aside__item">
+                        <i class="fas fa-tasks aside__icon icon"></i>
+                        <a href="#" class="aside__link">Project management</a>
+                    </li>
+                    <li class="aside__item">
+                        <i class="fas fa-users-cog aside__icon icon"></i>
+                        <a href="#" class="aside__link">Account management</a>
+                    </li>
+                    <li class="aside__item">
+                        <i class="far fa-comments aside__icon icon"></i>
+                        <a href="#" class="aside__link">C.M.S</a>
+                    </li>
+                    <li class="aside__item">
+                        <i class="far fa-calendar-alt aside__icon icon"></i>
+                        <a href="#" class="aside__link">Categories and subcategories</a>
+                    </li>
+                    <li class="aside__item">
+                        <i class="fas fa-cogs aside__icon icon"></i>
+                        <a href="#" class="aside__link">Skill management</a>
+                    </li>
+                    <li class="aside__item">
+                        <i class="fas fa-cog aside__icon icon"></i>
+                        <a href="#" class="aside__link">Settings</a>
+                    </li>
+                </ul>
+            </nav>
+      </aside>
+<aside class="aside-right">
+        <div class="inbox-container">
+            <div class="inbox__head">
+               <p>Inbox</p>
+            </div>
+            <div class="inbox-stats">
+                <div class="inbox-stats__compose">
+                    <a href="#">Compose</a>
+                </div>
+                <div class="inbox-stats_count">
+                    <div class="dashboard_notifier">
+                        <ul class="notify">
+                            <li>
+                                Inbox
+                            </li>
+                            <li class="notify_num">
+                                5
+                            </li>
+                        </ul>
+                        <ul class="notify">
+                            <li>
+                                Sent
+                            </li>
+                            <li class="notify_num">
+                                
+                            </li>
+                        </ul>
+                        <ul class="notify">
+                            <li>
+                                Unsent Messages
+                            </li>
+                            <li class="notify_num">
+                                
+                            </li>
+                        </ul>
+                        <ul class="notify">
+                            <li>
+                                Flagged
+                            </li>
+                            <li class="notify_num">
+                                34
+                            </li>
+                        </ul>
+                        <ul class="notify">
+                            <li>
+                                Reported Messages
+                            </li>
+                            <li class="notify_num">
+                                2
+                            </li>
+                        </ul>
+                        <ul class="notify">
+                            <li>
+                               Starred
+                            </li>
+                            <li class="notify_num">
+                                2
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="inbox-stats-tag">
+                    <div class="inbox-stats-tag-head">
+                        <h1>
+                            Tag
+                        </h1>
+                    </div>
+                  
+                    <ul class="inbox_tag">
+                        <div class="freelancer inbox-icon">
+                 
+
+                            <li>
+                                <span></span>
+                                Freelancer
+                            </li>
+                        </div>
+                        
+                     <div class="clients inbox-icon clients">
+                
+
+                        <li>
+                            <span style="background: rgb(102, 192, 220);"></span>
+                            Clients
+                        </li>
+                     </div>
+                      <div class="agency inbox-icon agency">
+                    
+
+                        <li>
+                            <span style="background: grey;"></span>
+                            Agency
+                        </li>
+                      </div>
+                      
+                    </ul>
+                </div>
+                    
+            </div>
+            <div class="inbox__user__chats">
+                <div class="navigation__search-box user_search">
+                    <i class="fas fa-search navigation__search-icon icon icon--grey"></i>
+                    <input type="text" class="navigation__search-input" placeholder="search transitions, invoices or help">
+                </div>
+                <div class="user__chats">
+                    <div class="conversation-list">
+                            <div class="conversation active">
+                                <div class="user_image_profile active">
+                                    <span>17</span>
+
+                                    <img src="./images/user_profile.jpg" alt="" width="50px" >
+                                </div>
+                               
+                               
+                                <div class="title-text">
+                                    Samuel
+                                </div>
+                                <div class="created-date">
+                                    Jul 16
+                                </div>
+                                <div class="conversation-message">
+                                   Lorem Ipsum dorem slt amem.Connec..                                   Lorem Ipsum dorem slt amem.Connec..
+
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="conversation-list">
+                        <div class="conversation ">
+                            <div class="user_image_profile">
+                                <span>17</span>
+
+                                <img src="./images/user_profile.jpg" alt="" width="50px" >
+                            </div>
+                           
+                           
+                            <div class="title-text">
+                                Samuel
+                            </div>
+                            <div class="created-date">
+                                Jul 16
+                            </div>
+                            <div class="conversation-message">
+                               Lorem Ipsum dorem slt amem.Connec..
+                            </div>
+                        </div>
+                </div>
+           
+        
+
+                <div class="conversation-list">
+                    <div class="conversation ">
+                        <div class="user_image_profile">
+                            <span>17</span>
+
+                            <img src="./images/user_profile.jpg" alt="" width="50px" >
+                        </div>
+                       
+                       
+                        <div class="title-text">
+                            Samuel
+                        </div>
+                        <div class="created-date">
+                            Jul 16
+                        </div>
+                        <div class="conversation-message">
+                           Lorem Ipsum dorem slt amem.Connec..
+                        </div>
+                    </div>
+            </div>   <div class="conversation-list">
+                <div class="conversation ">
+                    <div class="user_image_profile">
+                        <span>17</span>
+
+                        <img src="./images/user_profile.jpg" alt="" width="50px" >
+                    </div>
+                   
+                   
+                    <div class="title-text">
+                        Samuel
+                    </div>
+                    <div class="created-date">
+                        Jul 16
+                    </div>
+                    <div class="conversation-message">
+                       Lorem Ipsum dorem slt amem.Connec..
+                    </div>
+                </div>
+        </div>   <div class="conversation-list">
+            <div class="conversation ">
+                <div class="user_image_profile">
+                    <span>17</span>
+
+                    <img src="./images/user_profile.jpg" alt="" width="50px" >
+                </div>
+               
+               
+                <div class="title-text">
+                    Samuel
+                </div>
+                <div class="created-date">
+                    Jul 16
+                </div>
+                <div class="conversation-message">
+                   Lorem Ipsum dorem slt amem.Connec..
+                </div>
+            </div>
+    </div>   <div class="conversation-list">
+        <div class="conversation ">
+            <div class="user_image_profile">
+                <span>17</span>
+
+                <img src="./images/user_profile.jpg" alt="" width="50px" >
+            </div>
+           
+           
+            <div class="title-text">
+                Samuel
+            </div>
+            <div class="created-date">
+                Jul 16
+            </div>
+            <div class="conversation-message">
+               Lorem Ipsum dorem slt amem.Connec..
+            </div>
+        </div>
+</div>   <div class="conversation-list">
+    <div class="conversation ">
+        <div class="user_image_profile">
+            <span>17</span>
+
+            <img src="./images/user_profile.jpg" alt="" width="50px" >
+        </div>
+       
+       
+        <div class="title-text">
+            Samuel
+        </div>
+        <div class="created-date">
+            Jul 16
+        </div>
+        <div class="conversation-message">
+           Lorem Ipsum dorem slt amem.Connec..
+        </div>
+    </div>
+</div>
+                </div>
+                    
+            </div>
+            <div class="inbox__user__messages">
+                    <div class="user_message_header">
+                        <a href="">                          
+                              <div class="user_profile">
+                                  <div class="user_img">
+                                    
+                                    <img src="./images/user_profile.jpg"  alt="">
+                                  <span></span>
+                                  </div>
+                            
+                                <div class="user_profile_details">
+                                    <p>ColdShot</p>
+                                    <p class="user_freelancer">Freelancer</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="flag_user_account">
+                            <a href="#">
+                                <i class="fas fa-times-circle"></i>
+                                <a href="#">Flag Account</a>
+                            </a>
+                           
+                      
+                        </div>
+
+                    </div>
+                 
+                    <div id="message-container">
+                        <div id="chat-message-list">
+
+                                <div class="message-row admin-message">
+                                    <div class="message-text">
+                                        ok then
+                                    </div>
+                                    <div class="message-text">
+                                        ok then, would see what we can do
+                                    </div>
+                                    <div class="message-time">
+                                        Apr 14
+                                    </div>
+                                </div>
+                                <div class="message-row users-message">
+                                    <div class="message-text">
+                                        Hello Admin, am having a problem with my count i would like you to help me pls
+                                    </div>
+                                    <div class="message-time">
+                                        Apr 14
+                                    </div>
+                                </div>
+                                
+                                <div class="message-row admin-message">
+                                    <div class="message-text">
+                                        ok then
+                                    </div>
+                                    <div class="message-time">
+                                        Apr 14
+                                    </div>
+                                </div>
+                                <div class="message-row users-message">
+                                    <div class="message-text">
+                                        Hello Admin, am having a problem with my count i would like you to help me pls
+                                    </div>
+                                    <div class="message-time">
+                                        Apr 14
+                                    </div>
+                                </div>
+                                
+                                <div class="message-row admin-message">
+                                    <div class="message-text">
+                                        ok then
+                                    </div>
+                                    <div class="message-time">
+                                        Apr 14
+                                    </div>
+                                </div>
+                                <div class="message-row users-message">
+                                    <div class="message-text">
+                                        Hello Admin, am having a problem with my count i would like you to help me pls
+                                    </div>
+                                    <div class="message-time">
+                                        Apr 14
+                                    </div>
+                                </div>
+                                
+                        </div>
+                        <div id="chat-form">
+                            <label for="file-input">
+                                <i class="fas fa-paperclip"></i>
+                        </label>
+                            <input type="file" id="file-input" class="attach-file">
+                            <input type="text" placeholder="Type a message....." >
+                            <i class="fas fa-paper-plane"></i>
+                        </div>
+                    </div>
+                 
+        </div>
+        </div>
+</aside>
+    </main>
+<footer>
+    <p>Lancerpoint</p>
+</footer>  
+
+<script src="js/chat.js"></script>
+    <script src="js/App.js"></script>
+</body>
+</html>

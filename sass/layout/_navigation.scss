@@ -1,0 +1,93 @@
+.navigation{
+    width: 100%;
+    height: 8rem;
+    padding:1rem 1.6rem;
+    display: flex;
+    align-items: center;
+    background: $color-white;
+    box-shadow: 0 .5rem 1rem rgba($color-grey-dark,.2);
+
+    &__logo-box{
+        padding: 3px;
+        width: 20%;
+        height: 5rem;
+        border-right: 1px solid $color-grey-dark-2;
+        background: $color-grey-light-3;
+    }
+
+    &__logo{
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__search-box{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        border: 1px solid transparent;
+        margin-right: 5px;
+        border-radius: 3px;
+
+
+        &:focus-within{
+            border: 1px solid $color-primary-dark;
+        }
+    }
+
+    &__search-icon{
+        font-size: 1.9rem;
+    }
+
+    &__search-input{
+        font-family:$default-font-family;
+        display: inline-block;
+        border: none;
+        padding: 5px;
+        width: 95%;
+        color: $color-grey-dark-2;
+
+        &:focus{
+            outline: none;
+        }
+
+        &::placeholder{color: $color-grey-dark-2;}
+    }
+
+    &__icon-box{
+        margin-left: auto;
+        margin-right: 2em;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 5px;
+        width: 5%;
+
+        i:not(:last-child){
+            margin-right: 8px;
+        }
+    }
+
+    &__logout-link{
+        &,
+        &:link,
+        &:visited{
+            text-decoration: none;
+            padding: 0 5rem;
+            border-left: 1px solid $color-grey-dark-2;
+            text-align: center;
+        }
+
+        span{
+            color: $color-grey-dark-2;
+        }
+    }
+
+    &__logout-icon{
+        &,
+        &:hover{
+            color: $color-grey-dark-3;
+        }
+    }
+
+}

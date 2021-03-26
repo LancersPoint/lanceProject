@@ -1,0 +1,1 @@
+const hideInboxStats = document.getElementsByClassName(".inbox-stats")

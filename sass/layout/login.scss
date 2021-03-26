@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+// --------------LOGIN FORM--------------------------
+
+
+
+
+.login_logo img{
+    width: 300px;
+    // height: 50px;
+}
+
+
+.login-box{
+    text-align: center;
+    margin-top: 5%;
+}
+.logo-box__content{
+    position: relative;
+
+    & p{
+        color: rgb(167, 167, 167);
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    & .login_input{
+        margin: 20px;
+        border: none;
+        border-bottom: 1px solid rgb(202, 202, 202);
+        width: 300px;
+        outline: none;
+    }
+    
+}
+
+.remember{
+    margin-right: 198px;
+}
+
+#remember{
+    font-size: 12px;
+}
+
+
+
+.login-btn{
+    margin-top: 30px;
+
+    & a{
+        background: rgb(111, 237, 111);
+        padding: 10px 40px;
+        font-size: 12px;
+        text-decoration: none;
+        color: #fff;
+        border-radius: 5px;
+    }
+}
+
+.terms{
+    text-align: center;
+    margin-top: 200px;
+    font-size: 12px;
+
+
+    & a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+input[type="password"]::-ms-reveal {
+    display: none;
+  }
+
+  .toggle {
+    background: none;
+    border: none;
+    color: #337ab7;
+    /*display: none;*/
+    /*font-size: .9em;*/
+    font-weight: 600;
+    /*padding: .5em;*/
+    // position: absolute;
+    // top: 2.25em;
+    z-index: 9;
+    outline: none;
+  }
+
+  .fa {
+    font-size: 1rem;
+    margin-left: -70px;
+    color: black;
+  }
+
+
+
+//   ------------------------------------------
