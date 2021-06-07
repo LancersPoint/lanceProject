@@ -16,6 +16,7 @@ from django.utils.http import urlsafe_base64_decode
 from django.utils.encoding import force_bytes
 from django.utils.http import urlsafe_base64_encode
 from .tokens import account_activation_token
+from Lancer.settings import EMAIL_HOST_USER as admin_mail
 from django.template.loader import render_to_string
 
 def register(request):
@@ -33,9 +34,10 @@ def register(request):
             
             # GETTING THE USER INFO TO SAVE AS THE PROFILE
             country = user_form.cleaned_data['country']
+            bio = user_form.cleaned_data['bio']
             username = user_form.cleaned_data['username']
             password = user_form.cleaned_data['password']
-            photo = user_form.cleaned_data['photo']
+            photo = user_form.cleaned_data['photo']     
             date_of_birth = user_form.cleaned_data['date_of_birth']
             title = user_form.cleaned_data['title']
             resume = user_form.cleaned_data['resume']
@@ -52,25 +54,47 @@ def register(request):
             subject = 'Please Activate Your Account'
             # load a template like get_template() 
             # and calls its render() method immediately.
-            message = render_to_string('activation_request.html', {
+            message = render_to_string('account/activation_request.html', {
                 'user': new_user,
                 'domain': current_site.domain,
                 'uid': urlsafe_base64_encode(force_bytes(new_user.pk)),
                 # method will generate a hash value with user related data
                 'token': account_activation_token.make_token(new_user),
             })
-            new_user.email_user(subject, message)
-            # TODO: return redirect('activation_sent')
+            send_mail(subject=subject, message=message, from_email=admin_mail, recipient_list=[new_user.email])
+            return redirect('account:activation_sent')
             # user = authenticate(username=username, password=password)
             # login(request, user)
-            # TODO: return redirect("core:home")
+            # return redirect("core:home")
         else:
             return render(request, 'account/register.html', {'form': user_form, 'error':user_form.errors})
             
     else:
         user_form = UserRegistratioinForm()
-    # TODO return render(request, 'account/register.html',{'form': user_form})
+    return render(request, 'account/register.html',{'form': user_form})
 
+
+def activate(request, uidb64, token):
+    try:
+        uid = force_text(urlsafe_base64_decode(uidb64))
+        user = User.objects.get(pk=uid)
+    except (TypeError, ValueError, OverflowError, User.DoesNotExist):
+        user = None
+    # checking if the user exists, if the token is valid.
+    if user is not None and account_activation_token.check_token(user, token):
+        # if valid set active true 
+        user.is_active = True
+        # set signup_confirmation true
+        user.profile.signup_confirmation = True
+        user.save()
+        login(request, user, backend='django.contrib.auth.backends.ModelBackend')
+        return redirect('account:register')
+    else:
+        return render(request, 'activation_invalid.html')
+
+
+def activation_sent(request):
+    return render(request, "account/activation-sent.html")
 
 def user_login(request):
     if request.method == 'POST':

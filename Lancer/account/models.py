@@ -18,12 +18,12 @@ class Profile(models.Model):
                                 on_delete=models.CASCADE)
     signup_confirmation = models.BooleanField(default=False)
     country = CountryField(null=True)
-    photo = models.ImageField(upload_to='images/', blank=True)
-    resume = models.FileField(upload_to='images/', blank=True)
+    photo = models.ImageField(upload_to='users/%Y/%m/%d/', blank=True)
+    resume = models.FileField(upload_to='documents/', blank=True)
     phone_number = PhoneNumberField(null=True)
     date_of_birth = models.DateField(blank=True, null=True)
     bio = models.TextField()
-    title = models.CharField()
+    title = models.CharField(max_length=300)
     send_mail = models.BooleanField(default=True)
 
     # TODO: Address 

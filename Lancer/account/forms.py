@@ -17,6 +17,7 @@ class UserRegistratioinForm(forms.ModelForm):
     photo = forms.ImageField(required=True)
     resume = forms.FileField(required=True)
     title = forms.CharField()
+    bio = forms.CharField(widget=forms.Textarea())
     date_of_birth = forms.DateField(required=True)
     username = forms.CharField(max_length=20, min_length=8)
     country = forms.ChoiceField(widget=CountrySelectWidget, choices=countries)
