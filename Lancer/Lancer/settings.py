@@ -15,7 +15,8 @@ SECRET_KEY = 'shcaafyx^7_4ysux8s9#6@om831+9h=f0jusr5-z5-3b@bb^9)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["https://lancerspointdemo.herokuapp.com/",
+ "localhost:8000"]
 
 
 # Application definition
