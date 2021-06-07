@@ -151,4 +151,5 @@ EMAIL_HOST_PASSWORD = 'Chinonsoluv'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 django_heroku.settings(locals())
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # STATICFILES_STORAGE  = 'lanceProject.storage.CompressedManifestStaticFilesStorage'
