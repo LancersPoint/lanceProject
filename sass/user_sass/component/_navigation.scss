@@ -1,0 +1,113 @@
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5rem;
+    font-size: 1.3rem;
+
+    @include respond(tab-port){
+        position: fixed;
+        display: none;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 20;
+        background-color: red;
+    }
+
+    &__logo{
+        height: 5rem;
+        object-fit: cover;
+    }
+
+    &__search{
+        border-bottom: 1px solid var(--color-grey);
+        width: 25%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__input{
+        font-size: 1.2rem;
+        padding: .8rem;
+        border: none;
+        font-family: var(--default-font);
+        width: 80%;
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+
+    &__dropdown-btn,
+    &__search-btn{
+        border: none;
+        outline: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    
+    &__dropdown-icon,
+    &__search-icon{
+        height: 2rem;
+        width: 2rem;
+        fill: var(--color-dark);
+    }
+
+    &__list{
+        list-style: none;
+        display: flex;
+    }
+
+    &__item{
+        margin-left: 4rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    &__link:link,
+    &__link:visited{
+        font-size: 1.1rem;
+        font-weight: 600;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--color-dark);
+        font-family: var(--default-font);
+
+        @include respond (tab-land){
+            font-size: 1rem;
+        }
+    }
+
+    &__dropdown-btn{
+        margin-left: .5rem;
+    }
+
+
+
+
+    
+    &__cta:link,
+    &__cta:visited{
+        font-size: 1.1rem;
+        text-decoration: none;
+        padding: 1rem 4rem;
+        background-color: var(--color-primary);
+        color: #fff;
+        border-radius: 50px;
+        cursor: pointer;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+    }
+
+    &__login-icon{
+        height: 1.3rem;
+        width: 1.3rem;
+        fill: currentColor;
+        margin-left: .5rem;
+    }
+}

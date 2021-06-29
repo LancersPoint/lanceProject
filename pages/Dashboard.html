@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/Dashboard.css">
+    <link rel="shortcut icon" href="../images/logos/1615836169185_lancerspoint-logo-2.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ba80ca1c79.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.0/chart.min.js"></script>
+
+    
+    <title>Lancer Point | Admin Panel - Project management</title>
+</head>
+<body>
+    <div class="navigation">
+        <div class="navigation__logo-box">
+           <a href="Dashboard.html">
+            <img src="../images/logos/1615836166736_lanserpoint-point-long.png" alt="Lancer point logo" class="navigation__logo"/>
+           </a>
+        </div>
+
+        <div class="navigation__search-box">
+            <i class="fas fa-search navigation__search-icon icon icon--grey"></i>
+            <input type="text" class="navigation__search-input" placeholder="search transitions, invoices or help">
+        </div>
+        
+        <div class="navigation__icon-box">
+            <i class="fas fa-globe icon icon--grey icon--notify"></i>
+            <i class="fas fa-comments icon icon--grey icon--notify"></i>
+            <i class="fas fa-bell icon icon--grey active icon--notify"></i>
+        </div>
+
+        <a href="#" class="navigation__logout-link">
+            <i class="navigation__logout-icon icon fas fa-bed"></i>
+            <span>Log out</span>
+        </a>
+    </div>
+    <main>
+      <aside class="aside">
+            <nav class="asiide__nav">
+              <ul class="aside__list">
+                <li class="aside__item active">
+                    <i class="fas fa-chart-area aside__icon icon"></i>
+                    <a href="Dashboard.html" class="aside__link">Dashboard</a>
+                </li>
+                <li class="aside__item ">
+                    <i class="far fa-envelope aside__icon icon"></i>
+                    <a href="../index.htm" class="aside__link">Inbox</a>
+                </li>
+                <li class="aside__item ">
+                    <i class="fas fa-tasks aside__icon icon"></i>
+                    <a href="Project_management.htm" class="aside__link">Project management</a>
+                </li>
+                <li class="aside__item">
+                    <i class="fas fa-users-cog aside__icon icon"></i>
+                    <a href="Account_management.htm" class="aside__link">Account management</a>
+                </li>
+                <li class="aside__item">
+                    <i class="far fa-comments aside__icon icon"></i>
+                    <a href="CMS.html" class="aside__link">C.M.S</a>
+                </li>
+                <li class="aside__item">
+                    <i class="far fa-calendar-alt aside__icon icon"></i>
+                    <a href="Categories.htm" class="aside__link">Categories and subcategories</a>
+                </li>
+                <li class="aside__item">
+                    <i class="fas fa-cogs aside__icon icon"></i>
+                    <a href="Skills-management.html" class="aside__link">Skill management</a>
+                </li>
+                <li class="aside__item">
+                    <i class="fas fa-cog aside__icon icon"></i>
+                    <a href="settings.htm" class="aside__link">Settings</a>
+                </li>
+              </ul>
+            </nav>
+      </aside>
+      <div class="dasboard-container">
+          <h1 class="headline">Hello Christopher, Here's your overview</h1>
+          
+          <div class="dash-main">
+            <div class="main-overview">
+              <div class="pending-projects">
+                  <h4>Pending Projects</h4>
+                  <div class="pp-chart-container">
+                    <div class="amount-of-pp">
+                      <h1>102</h1>
+                      <i class="fas fa-long-arrow-alt-down"> 13.8%</i>
+                    </div>
+
+                    <div class="pp-chart">
+                      <div style="height: 63%;" class="bars"></div>
+                      <div style="height: 83%;" class="bars"></div>
+                      <div style="height: 53%;" class="bars"></div>
+                      <div style="height: 73%;" class="bars"></div>
+                      <div style="height: 88%;" class="bars"></div>
+                      <div style="height: 100%;" class="bars"></div>
+                      <div style="height: 83%;" class="bars"></div>
+                      <div style="height: 53%;" class="bars"></div>
+                      <div style="height: 73%;" class="bars"></div>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="reported-accounts">
+                <h4>Reported Accounts</h4>
+                <div class="pp-chart-container">
+                  <div class="amount-of-pp">
+                    <h1>6</h1>
+                    <i class="fas fa-long-arrow-alt-up"> 13.8%</i>
+                  </div>
+
+                  <div class="pp-chart">
+                    <div style="height: 63%;" class="bars"></div>
+                    <div style="height: 83%;" class="bars"></div>
+                    <div style="height: 53%;" class="bars"></div>
+                    <div style="height: 73%;" class="bars"></div>
+                    <div style="height: 88%;" class="bars"></div>
+                    <div style="height: 100%;" class="bars"></div>
+                    <div style="height: 83%;" class="bars"></div>
+                    <div style="height: 53%;" class="bars"></div>
+                    <div style="height: 73%;" class="bars"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pending-disputes">
+                <h4>Pending Disputes</h4>
+                <div class="pp-chart-container">
+                  <div class="amount-of-pp">
+                    <h1>39</h1>
+                    <i class="fas fa-long-arrow-alt-down"> 13.8%</i>
+                  </div>
+
+                  <div class="pp-chart">
+                    <div style="height: 63%;" class="bars"></div>
+                    <div style="height: 83%;" class="bars"></div>
+                    <div style="height: 53%;" class="bars"></div>
+                    <div style="height: 73%;" class="bars"></div>
+                    <div style="height: 88%;" class="bars"></div>
+                    <div style="height: 100%;" class="bars"></div>
+                    <div style="height: 83%;" class="bars"></div>
+                    <div style="height: 53%;" class="bars"></div>
+                    <div style="height: 73%;" class="bars"></div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          
+          <div class="dashboard-graph">
+            <h3>Statistics</h3>
+            <canvas id="myChart"></canvas>
+          </div>
+
+          <div class="ia-and-ts-container">
+            <div class="inactive-accounts-container">
+                <h3 style="margin-bottom: 20px;">Inactive accounts</h3>
+                
+
+                <div class="header-content-container">
+
+                  <div class="header">
+                    <p>Email</p>
+                    <p>Last login<p>
+                    <p>Income</p>
+                    <p>Pending projects</p>
+                  </div>
+                  <div class="header-content">
+                    <p>google</p>
+                    <p>3746</p>
+                    <p>3746</p>
+                    <p>3576</p>
+                  </div>
+                  <div class="header-content">
+                    <p>google</p>
+                    <p>3746</p>
+                    <p>3746</p>
+                    <p>3576</p>
+                  </div>
+                  <div class="header-content">
+                    <p>google</p>
+                    <p>3746</p>
+                    <p>3746</p>
+                    <p>3576</p>
+                  </div>
+                  <div class="header-content">
+                    <p>google</p>
+                    <p>3746</p>
+                    <p>3746</p>
+                    <p>3576</p>
+                  </div>
+                  <div class="header-content">
+                    <p>google</p>
+                    <p>3746</p>
+                    <p>3746</p>
+                    <p>3576</p>
+                  </div>
+                  <div class="header-content">
+                    <p>google</p>
+                    <p>3746</p>
+                    <p>3746</p>
+                    <p>3576</p>
+                  </div>
+                </div>
+                <a class="show-more" href="">Show more</a>
+                
+            </div>
+            <div class="transaction-summary-container">
+                <h2>Transaction summary</h2>
+
+                <div class="summary-container">
+                    <div class="summary">
+                        <div class="wrf-container">
+                          <i class="fas fa-sync"></i>
+                          <div class="wrf">
+                              <h4>Withdrawal request form <span>121324</span></h4>
+                              <p>5 march, 18:33</p>
+                          </div>
+                        </div>
+
+                        <div class="currency-update">
+                            <span class="red">- 1,470</span>
+                            <p>USD</p>
+                        </div>
+                    </div>
+
+                    <div class="summary">
+                      <div class="wrf-container">
+                        <i class=" purple fab fa-paypal"></i>
+                        <div class="wrf">
+                            <h4>Withdrawal request form <span>121324</span></h4>
+                            <p>5 march, 18:33</p>
+                        </div>
+                      </div>
+
+                      <div class="currency-update">
+                          <span class="green">+ 2,220</span>
+                          <p>USD</p>
+                      </div>
+                    </div>
+
+                    <div class="summary">
+                      <div class="wrf-container">
+                        <i class="purple fas fa-check"></i>
+                        <div class="wrf">
+                            <h4>Withdrawal request form <span>121324</span></h4>
+                            <p>5 march, 18:33</p>
+                        </div>
+                      </div>
+
+                      <div class="currency-update">
+                          <span class="green">+ 250</span>
+                          <p>USD</p>
+                      </div>
+                    </div>
+
+                    <div class="summary">
+                      <div class="wrf-container">
+                        <i class=" orange fas fa-times"></i>
+                        <div class="wrf">
+                            <h4>Withdrawal request form <span>121324</span></h4>
+                            <p>5 march, 18:33</p>
+                        </div>
+                      </div>
+
+                      <div class="currency-update">
+                          <span class="green"> 0</span>
+                          <p>USD</p>
+                      </div>
+                    </div> 
+
+                    <div class="summary">
+                      <div class="wrf-container">
+                        <i class=" orange fas fa-reply"></i>
+                        <div class="wrf">
+                            <h4>Withdrawal request form <span>121324</span></h4>
+                            <p>5 march, 18:33</p>
+                        </div>
+                      </div>
+
+                      <div class="currency-update">
+                          <span class="red">- 950</span>
+                          <p>USD</p>
+                      </div>
+                    </div>
+
+                    <div class="summary">
+                      <div class="wrf-container">
+                        <i class="fas fa-times"></i>
+                        <div class="wrf">
+                            <h4>Withdrawal request form <span>121324</span></h4>
+                            <p>5 march, 18:33</p>
+                        </div>
+                      </div>
+
+                      <div class="currency-update">
+                          <span class="green">+ 250</span>
+                          <p>USD</p>
+                      </div>
+                    </div>
+
+                    <div class="summary">
+                      <div class="wrf-container">
+                        <i class="purple fas fa-check"></i>
+                        <div class="wrf">
+                            <h4>Withdrawal request form <span>121324</span></h4>
+                            <p>5 march, 18:33</p>
+                        </div>
+                      </div>
+
+                      <div class="currency-update">
+                          <span class="red">- 1,470</span>
+                          <p>USD</p>
+                      </div>
+                    </div>
+
+                    <div class="summary">
+                      <div class="wrf-container">
+                        <i class=" orange fas fa-reply"></i>
+                        <div class="wrf">
+                            <h4>Withdrawal request form <span>121324</span></h4>
+                            <p>5 march, 18:33</p>
+                        </div>
+                      </div>
+
+                      <div class="currency-update">
+                          <span class="red">- 1,470</span>
+                          <p>USD</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          </div>
+          
+      </div>
+
+      <footer class="footer">
+        <div class="footer__copyright">&copy; LANCERSPOINT</div>
+      </footer>
+    </main>
+    <script src="js/App.js"></script>
+    <script>
+      var myChart = document.getElementById('myChart').getContext('2d');
+
+      var lancerChart = new Chart(myChart, {
+          type:"bar",
+          data:{
+            labels:['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+          datasets:[{
+            data:[
+            25000, 20000, 15000, 10000, 5000, 1000
+            ],
+            backgroundColor:'rgba(65, 153, 225, 0.938)'
+          }],
+          },
+          options:{}
+      });
+    </script>
+    
+</body>
+</html>

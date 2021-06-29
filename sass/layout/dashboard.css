@@ -45,7 +45,7 @@
 .inbox-stats__compose a {
   text-decoration: none;
   color: #fff;
-  background: #22a710;
+  background: #28b34b;
   padding: 8px 40px;
   border-radius: 4px;
 }
@@ -82,31 +82,26 @@
 }
 
 .inbox-stats-tag-head {
-  border-bottom: 1px solid #e4e4e4;
+  border-top: 1px solid #e4e4e4;
 }
 
 .inbox_tag li {
   list-style: none;
   margin-top: -4px;
+  font-size: 1.3rem;
 }
 
-.inbox_tag li span {
-  width: 20px;
-  background: black;
+.inbox-icon span {
+  background: #2bff00;
+  padding: 2px 5px 3px 5px;
   border-radius: 50%;
-  padding: 0 0 0 10px;
-  height: 10px;
-}
-
-.inbox-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 10px;
+  color: #fff;
+  margin-right: 10px;
+  margin-bottom: 5px;
 }
 
 .inbox-icon li {
-  padding: 0 0 0  10px;
+  padding: 10px;
 }
 
 .inbox__user__chats {
@@ -117,7 +112,7 @@
 }
 
 .inbox_tag {
-  padding: 20px;
+  padding: 11px;
 }
 
 .inbox__user__messages {
@@ -128,9 +123,8 @@
 }
 
 footer {
-  background: #199b0d;
+  background: #28b34b;
   padding: 15px;
-  border: 1px solid #212121;
 }
 
 footer p {
@@ -184,10 +178,18 @@ footer p {
      object-fit: cover;
 }
 
+.conversation > img::after {
+  content: "";
+  background: black;
+  padding: 3px;
+  width: 20px;
+  height: 20px;
+}
+
 .title-text {
   font-weight: bold;
   color: #020202;
-  padding-left: 5px;
+  padding-left: 8px;
   white-space: nowrap;
   overflow-x: hidden;
   text-overflow: ellipsis;
@@ -196,11 +198,12 @@ footer p {
 
 .conversation-message {
   grid-column: span 2;
-  padding-left: 5px;
+  padding-left: 51px;
   white-space: nowrap;
   overflow-x: hidden;
   text-overflow: ellipsis;
   color: black;
+  margin-top: -39px;
 }
 
 .created-date {
@@ -231,6 +234,18 @@ footer p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+}
+
+.user_profile span {
+  background: #2bff00;
+  padding: 6px;
+  border-radius: 50%;
+  color: #fff;
+  margin-left: 35px;
+  position: absolute;
+  top: 38px;
+  right: 0px;
 }
 
 .user_profile img {
@@ -256,7 +271,7 @@ footer p {
 }
 
 #message-container {
-  height: 100%;
+  height: 87%;
 }
 
 #chat-message-list {
@@ -365,5 +380,27 @@ footer p {
 
 #chat-form > .attach-file {
   display: none;
+}
+
+.user_image_profile {
+  position: relative;
+}
+
+.user_image_profile span {
+  background: #c6c6c6;
+  padding: 4px;
+  border-radius: 50%;
+  color: #fff;
+  margin-left: 35px;
+  position: absolute;
+  bottom: 0;
+  right: -7px;
+}
+
+.user_image_profile img {
+  border-radius: 50%;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=dashboard.css.map */

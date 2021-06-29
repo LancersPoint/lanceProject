@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="images/logos/1615836169185_lancerspoint-logo-2.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ba80ca1c79.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Avenir">
+    <title>Admin Inbox</title>
+    <link rel="shortcut icon" href="../images/logos/1615836169185_lancerspoint-logo-2.png" type="image/x-icon">
+
+
+</head>
+<body>
+    <div class="navigation">
+        <div class="navigation__logo-box">
+            <img src="../images/logos/1615836166736_lanserpoint-point-long.png" alt="Lancer point logo" class="navigation__logo"/>
+        </div>
+
+        <div class="navigation__search-box">
+            <i class="fas fa-search navigation__search-icon icon icon--grey"></i>
+            <input type="text" class="navigation__search-input" placeholder="search transitions, invoices or help">
+        </div>
+        
+        <div class="navigation__icon-box">
+            <i class="fas fa-globe icon icon--grey icon--notify"></i>
+            <i class="fas fa-comments icon icon--grey icon--notify"></i>
+            <i class="fas fa-bell icon icon--grey active icon--notify"></i>
+        </div>
+
+        <a href="#" class="navigation__logout-link">
+            <i class="navigation__logout-icon icon fas fa-bed"></i>
+            <span>Log out</span>
+        </a>
+    </div>
+    <main>
+      <aside class="aside">
+            <nav class="asiide__nav">
+                <ul class="aside__list">
+                    <li class="aside__item active">
+                        <i class="fas fa-chart-area aside__icon icon"></i>
+                        <a href="/index.htm" class="aside__link">Dashboard</a>
+                    </li>
+                    <li class="aside__item">
+                        <i class="far fa-envelope aside__icon icon"></i>
+                        <a href="#" class="aside__link">Inbox</a>
+                    </li>
+                    <li class="aside__item">
+                        <i class="fas fa-tasks aside__icon icon"></i>
+                        <a href="#" class="aside__link">Project management</a>
+                    </li>
+                    <li class="aside__item">
+                        <i class="fas fa-users-cog aside__icon icon"></i>
+                        <a href="#" class="aside__link">Account management</a>
+                    </li>
+                    <li class="aside__item">
+                        <i class="far fa-comments aside__icon icon"></i>
+                        <a href="#" class="aside__link">C.M.S</a>
+                    </li>
+                    <li class="aside__item">
+                        <i class="far fa-calendar-alt aside__icon icon"></i>
+                        <a href="#" class="aside__link">Categories and subcategories</a>
+                    </li>
+                    <li class="aside__item">
+                        <i class="fas fa-cogs aside__icon icon"></i>
+                        <a href="#" class="aside__link">Skill management</a>
+                    </li>
+                    <li class="aside__item">
+                        <i class="fas fa-cog aside__icon icon"></i>
+                        <a href="#" class="aside__link">Settings</a>
+                    </li>
+                </ul>
+            </nav>
+      </aside>
+      <aside class="aside-right">
+        <div class="inbox-container">
+                <div class="inbox__head">
+                    <p>Inbox</p>
+                </div>
+                <div class="inbox_compose_border">
+                    <div class="inbox_compose_header">
+                        <input type="text" placeholder="To" required>
+                        <input type="text" placeholder="CC">
+                        <input type="text" placeholder="Subject">
+                        <div class="inbox_message-body">
+                            <input type="textarea" placeholder="Write something...">
+                        </div>
+
+                            <div class="send_message  popup">
+                                <a href="#">Send</a>
+                            </div>
+                    </div>
+                 
+                    
+
+            </div>
+            <div class=" modal hidden">
+                <i class="fas fa-check-double"></i>
+                    <p>
+                       Message Sent Successfully
+                    </p>
+                   
+               <div class="modal_back">
+                <i class="fas fa-undo back"></i>
+                   <a href="#"> Back to messages</a>
+               </div>
+            </div>
+           
+            
+           
+        </div>
+      
+       
+      </aside>
+      <footer>
+        <p>Lancerpoint</p>
+    </footer> 
+    <div class="overlay hidden">
+
+    </div> 
+
+    <script src="../script/successful_modal.js"></script>
+</body>
+</html>

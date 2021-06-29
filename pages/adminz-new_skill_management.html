@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="shortcut icon" href="../images/logos/1615836169185_lancerspoint-logo-2.png" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/ba80ca1c79.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Avenir">
+        <title>Document</title>
+    
+    </head>
+<body>
+
+
+    <div class="navigation">
+        <div class="navigation__logo-box">
+            <a href="Dashboard.html">
+                <img src="../images/logos/1615836166736_lanserpoint-point-long.png" alt="Lancer point logo" class="navigation__logo"/>
+               </a>
+        </div>
+
+        <div class="navigation__search-box">
+            <i class="fas fa-search navigation__search-icon icon icon--grey"></i>
+            <input type="text" class="navigation__search-input" placeholder="search transitions, invoices or help">
+        </div>
+        
+        <div class="navigation__icon-box">
+            <i class="fas fa-globe icon icon--grey icon--notify"></i>
+            <i class="fas fa-comments icon icon--grey icon--notify"></i>
+            <i class="fas fa-bell icon icon--grey active icon--notify"></i>
+        </div>
+
+        <a href="#" class="navigation__logout-link">
+            <i class="navigation__logout-icon icon fas fa-bed"></i>
+            <span>Log out</span>
+        </a>
+    </div>
+
+
+    
+    <div class="category_wrapper">
+
+        <div class="title_content_header" style="width: 50%;">
+            <h1 class="head">New Skill</h1>
+            <input type="text" id="skill_content">
+        </div>
+
+        <br>
+        <br>
+        <div class="title_content_header" style="width: 50%;">
+            <h1 class="head">Parent Skill</h1>
+            
+            <form>
+                <select name="cars" id="cars"  style="width: 50%; padding: 7px; outline: none;">
+                  <option value="#">New Cell</option>
+                  <option value="#">New Cell</option>
+                  <option value="#">New Cell</option>
+                  <option value="#">New Cell</option>
+                  <option value="#">New Cell</option>
+                  <option value="#">New Cell</option>
+                  <option value="#">New Cell</option>
+                  <option value="#">New Cell</option>
+                </select>
+                <br><br>
+              </form>
+        </div>
+    
+    
+        <div class="button">
+            <ul>
+                <a href="# " class="popup">
+                    <li>Delete</li>
+                </a>
+                <a href="#" class="popup">
+                    <li>Preview</li>
+                </a>
+                
+                <a href="#" class="popup">
+                    <li>Publish</li>
+                </a>
+                
+            </ul>
+        </div>
+
+    </div>
+
+
+
+    <div class=" modal hidden">
+        <i class="fas fa-check-double"></i>
+            <p>
+               Skill Created Successfully
+            </p>
+           
+       <div class="modal_back">
+        <i class="fas fa-undo back"></i>
+           <a href="Skills-management.html"> Back to Skill Management</a>
+       </div>
+    </div>
+
+    <div class="overlay hidden">
+
+    </div>
+
+
+    <footer  class="footer">
+        <p>Lancerpoint</p>
+    </footer> 
+    <script src="../script/successful_modal.js"></script>
+    
+</body>
+</html>

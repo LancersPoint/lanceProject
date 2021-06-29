@@ -1,0 +1,50 @@
+.inbox_compose_border{
+    border: 1px solid rgb(194, 194, 194);
+    display: grid;
+    -ms-grid-column: 1;
+    grid-column-start: 1;
+grid-column-end: 5;
+height: 70vh;
+margin: 10px 0 0 30px;
+width: 100%;
+}
+
+
+.inbox_compose_header{
+        height: 20%;
+        margin: 20px 0 0 40px;
+        position: relative;
+    & input{
+       width: 90%;
+       padding: 5px;
+       margin: 5px;
+       outline: none;
+    }
+}
+
+.inbox_message-body{
+    margin-top: 20px;
+
+    & input{
+        height: 20vh;
+    }
+
+    &::placeholder{
+            margin-top: -70px;
+    }
+}
+
+.send_message{
+
+    margin: 20px 0 0 0;
+    position: absolute;
+    right: 6rem;
+
+    & a{
+        text-decoration: none;
+        padding: 5px 40px;
+        background: rgb(5, 183, 61);
+        color: #fff;
+        border-radius: 3px;
+    }
+}

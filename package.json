@@ -1,0 +1,26 @@
+{
+  "name": "lanceproject",
+  "version": "1.0.0",
+  "description": "lancer project jason",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LancersPoint/lanceProject.git"
+  },
+  "author": "coldshot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LancersPoint/lanceProject/issues"
+  },
+  "homepage": "https://github.com/LancersPoint/lanceProject#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "chart.js": "^3.2.0",
+    "jquery": "^3.6.0"
+  }
+}

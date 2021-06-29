@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="images/logos/1615836169185_lancerspoint-logo-2.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ba80ca1c79.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Avenir">
+    <link rel="shortcut icon" href="../images/logos/1615836169185_lancerspoint-logo-2.png" type="image/x-icon">
+ 
+    <title>Users Profile Page</title>
+
+</head>
+<body>
+    <div class="navigation">
+        <div class="navigation__logo-box">
+            <a href="Dashboard.html">
+                <img src="../images/logos/1615836166736_lanserpoint-point-long.png" alt="Lancer point logo" class="navigation__logo"/>
+               </a>
+        </div>
+
+        <div class="navigation__search-box">
+            <i class="fas fa-search navigation__search-icon icon icon--grey"></i>
+            <input type="text" class="navigation__search-input" placeholder="search transitions, invoices or help">
+        </div>
+        
+        <div class="navigation__icon-box">
+            <i class="fas fa-globe icon icon--grey icon--notify"></i>
+            <i class="fas fa-comments icon icon--grey icon--notify"></i>
+            <i class="fas fa-bell icon icon--grey active icon--notify"></i>
+        </div>
+
+        <a href="#" class="navigation__logout-link">
+            <i class="navigation__logout-icon icon fas fa-bed"></i>
+            <span>Log out</span>
+        </a>
+    </div>
+    
+        <div class="user_profile-wrapper">
+            <div class="user Profile-height">
+                <div class="user_details_container">
+                        <div class="user_details_profile">
+                            <div class="user_details_image">
+                                <img src="../images/user_profile.jpg" alt="user">
+                                <span class="verified_user"><i class="fas fa-check-circle"></i></span>
+                                <a href="#">
+                                    <div class="dispute_button_dropdown">
+                                <span class="user_options">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                    <div class="modal_dropdown  user_profile_dropdown">
+                                        <ul>
+                                          <a href="#" >  <li>Reset password <span><i class="fas fa-redo-alt "></i></span></li></a>
+                                          <a href="">  <li>Bid Status <span><i class="fas fa-money-check-alt"></i></span></li></a>
+                                          <a href="" class="popup"> <li>Delete User <span><i class="fas fa-trash-alt"></i></span></li></a> 
+                                      
+                                        </ul>
+                                    </div>
+                                </span>
+                                    </div>
+                            </a>
+                            </div>
+                          
+                            <p class="username">Christopher Client</p>
+                        </div>
+                        <div class="user_project_stats">
+                            <div class="projects">
+
+                                <div class="completed_project">
+                                   <strong> <p>12</p>  </strong>
+                                    <p>Completed Projects</p>
+                                </div>
+                                <div class="posted_projects">
+                                    <strong> <p>12</p>  </strong>
+
+                                    <p>Posted Projects</p>
+                                </div>
+                            </div>
+
+                            <br>
+                        
+
+                            <div class="decision">
+                                <a href="#" class="btn">Approve</a>
+                                <a href="#" class="btn">Ban</a>
+                            </div>
+                        </div>
+                </div>
+
+
+            </div>
+            <div class="user_details ">
+                <div class="user_contact_info">
+
+                    <div class="user__email">
+                     <span class="user_contact__head">  Email
+                        <i class="fas fa-envelope"></i>
+                    </span> 
+                        <p>myemail4616@gmail.com</p>
+                    </div>
+                    <div class="User__phone--number">
+                       <span class="user_contact__head"> Phone number<i class="fas fa-phone-alt"></i></span>
+                        <p>08012345678</p>
+                    </div>
+                    <div class="user__location">
+                        <span class="user_contact__head">
+                            Location <i class="fas fa-map-marker-alt"></i>
+                          
+                            </span>
+                            <span class="user_address">
+                                <p>Lagos,</p> <p>Nigeria</p>
+                          
+                        </span>
+                    </div>
+                    <div class="user__gender">
+                      <span class="user_contact__head">  Gender
+                        <i class="fas fa-male"></i>
+                    </span>
+                        <p>Male</p>
+                    </div>
+                    <div class="user__status">
+                        <span class="user_contact__head">
+                            Status <i class="fas fa-check-circle"></i>
+                          
+                        </span>
+                        <p>Approved</p>
+                    </div>
+                    <div class="user_date">
+                        <span class="user_contact__head">
+                            Date <i class="fas fa-table"></i>
+                        </span>
+                        <p>24/03/2021</p>
+                    </div>
+                    <div class="date_registered">
+                        <span class="user_contact__head">
+                            Date Registered <i class="fas fa-table"></i>
+
+                        </span>
+                        <p>1/1/2021</p>
+                    </div>
+                    <div class="user_type">
+                        <span class="user_contact__head">
+                            UserType<i class="fas fa-user-tie"></i>
+
+                        </span>
+                        <p>Freelancer</p>
+                    </div>
+
+                </div>
+ 
+
+            </div>
+            <div class="user_message ">
+                <h1 class="history__header"> <Strong> account history </Strong></h1>
+                <div id="chat-message-list">
+
+                    <div class="message-row admin-message">
+                        <div class="message-text">
+                            ok then
+                        </div>
+                        <div class="message-text">
+                            ok then, would see what we can do
+                        </div>
+                        <div class="message-time">
+                            Apr 14
+                        </div>
+                    </div>
+                    <div class="message-row users-message">
+                        <div class="message-text">
+                            Hello Admin, am having a problem with my count i would like you to help me pls
+                        </div>
+                        <div class="message-time">
+                            Apr 14
+                        </div>
+                    </div>
+                    
+                    <div class="message-row admin-message">
+                        <div class="message-text">
+                            ok then
+                        </div>
+                        <div class="message-time">
+                            Apr 14
+                        </div>
+                    </div>
+                    <div class="message-row users-message">
+                        <div class="message-text">
+                            Hello Admin, am having a problem with my count i would like you to help me pls
+                        </div>
+                        <div class="message-time">
+                            Apr 14
+                        </div>
+                    </div>
+                    
+                    <div class="message-row admin-message">
+                        <div class="message-text">
+                            ok then
+                        </div>
+                        <div class="message-time">
+                            Apr 14
+                        </div>
+                    </div>
+                    <div class="message-row users-message">
+                        <div class="message-text">
+                            Hello Admin, am having a problem with my count i would like you to help me pls
+                        </div>
+                        <div class="message-time">
+                            Apr 14
+                        </div>
+                    </div>
+                    
+            </div>
+            <div id="chat-form">
+                <label for="file-input">
+                    <i class="fas fa-paperclip"></i>
+            </label>
+                <input type="file" id="file-input" class="attach-file">
+                <input type="text" placeholder="Type a message....." >
+                <i class="fas fa-paper-plane"></i>
+            </div>
+            </div>
+            <div class="user_wallet ">
+                <div class="wallet">
+                    <div class="wallet-head">
+                        Wallet History
+                    </div>
+                    <div class="inbox-stats_count">
+                      <div class="stats_desh">
+                          <ul class="wallet__history">
+                              <li class="bal">
+                                  Total Balance <span  id="total_balance">
+                                      <i>$</i>
+                                      50000
+                                  </span>
+                              </li>
+                              <br>
+                              <li>
+                                Total Balance <span>
+                                    <i id="unpaid"></i>
+                                    Unpaid
+                                </span>
+                            </li>
+                            <li>
+                                <i>$</i> 
+                                18000
+                                <span>
+                                    <i>$</i>
+                                    50000
+                                </span>
+                            </li>
+                          </ul>
+                      </div>
+                    </div>
+
+                    <div class="wallet-pay">
+                        <span class="dollar-sign">$</span><input type="number">
+                        <a href="#">Pay</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="history Profile-height">
+                <h1 class="history__header"> <Strong> account history </Strong></h1>
+                <ul class="history__list">
+                    <li class="history__item">
+                        <span class="history__date">16<sup>th</sup> March 2021</span>
+                        <span class="history__update">Resumed for 1212132 project</span>
+                    </li>
+                    <li class="history__item">
+                        <span class="history__date">16<sup>th</sup> March 2021</span>
+                        <span class="history__update">Bid for 1212132 project</span>
+                    </li>
+                    <li class="history__item">
+                        <span class="history__date">16<sup>th</sup> March 2021</span>
+                        <span class="history__update">Messaged 1212132 </span>
+                    </li>
+                    <li class="history__item">
+                        <span class="history__date">16<sup>th</sup> March 2021</span>
+                        <span class="history__update"> 1212132 Boosted Profile</span>
+                    </li>
+                    <li class="history__item">
+                        <span class="history__date">16<sup>th</sup> March 2021</span>
+                        <span class="history__update">Made bid for 1212132 project</span>
+                    </li>
+                    <li class="history__item">
+                        <span class="history__date">16<sup>th</sup> March 2021</span>
+                        <span class="history__update"> 1212132 Boosted Profile</span>
+                    </li>
+                    <li class="history__item">
+                        <span class="history__date">16<sup>th</sup> March 2021</span>
+                        <span class="history__update"> 1212132 Boosted Profile</span>
+                    </li>
+                    <li class="history__item">
+                        <span class="history__date">16<sup>th</sup> March 2021</span>
+                        <span class="history__update"> 1212132 Boosted Profile</span>
+                    </li>
+                    <li class="history__item">
+                        <span class="history__date">16<sup>th</sup> March 2021</span>
+                        <span class="history__update"> 1212132 Boosted Profile</span>
+                    </li>
+                
+                </ul>
+            </div>
+            <div class="user_files_download Profile-height">
+                <h1 class="download_head">Files/Document</h1>
+                <div class="user_files">
+                    <div class="files">
+                        <i class="far fa-file"></i>
+                        <span>Christopher</span>
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <div class="files">
+                        <i class="far fa-file"></i>
+                        <span>Christopher</span>
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <div class="files">
+                        <i class="far fa-file"></i>
+                        <span>Christopher</span>
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <div class="files">
+                        <i class="far fa-file"></i>
+                        <span>Christopher</span>
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <div class="files">
+                        <i class="far fa-file"></i>
+                        <span>Christopher</span>
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <div class="files">
+                        <i class="far fa-file"></i>
+                        <span>Christopher</span>
+                        <i class="fas fa-download"></i>
+                    </div>
+                  
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+     
+    <div class=" modal  hidden">
+        <i class="fas fa-exclamation-triangle"></i>
+            <p>
+              ARE YOU SURE YOU WANT TO DELETE USER
+            </p>
+           
+       <div class="modal_back  decisive">
+           <ul>
+               <a href="#"><li>Yes</li></a>
+               <a href="#"><li>No</li></a>
+           </ul>
+       </div>
+    </div>
+        <div class="overlay hidden">
+        
+        </div> 
+    
+
+      <footer style="margin-top: 50px;"> 
+        <p>Lancerpoint</p>
+    </footer> 
+    <script src="../script/modeDropdown.js"></script>
+    <script src="../script/successful_modal.js"></script>
+</body>
+</html>

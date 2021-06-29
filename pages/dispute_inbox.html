@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="images/logos/1615836169185_lancerspoint-logo-2.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ba80ca1c79.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Avenir">
+    <link rel="shortcut icon" href="../images/logos/1615836169185_lancerspoint-logo-2.png" type="image/x-icon">
+    <meta name="description" content="Lancerpoint is a freelancing platform that allows you showcase yourself to the world">
+    <meta name="keywords" content="freelancing, online job">
+    <title>Users Dispute Inbox</title>
+</head>
+<body>
+    <div class="navigation">
+        <div class="navigation__logo-box">
+            <img src="../images/logos/1615836166736_lanserpoint-point-long.png" alt="Lancer point logo" class="navigation__logo"/>
+        </div>
+
+        <div class="navigation__search-box">
+            <i class="fas fa-search navigation__search-icon icon icon--grey"></i>
+            <input type="text" class="navigation__search-input" placeholder="search transitions, invoices or help">
+        </div>
+        
+        <div class="navigation__icon-box">
+            <i class="fas fa-globe icon icon--grey icon--notify"></i>
+            <i class="fas fa-comments icon icon--grey icon--notify"></i>
+            <i class="fas fa-bell icon icon--grey active icon--notify"></i>
+        </div>
+
+        <a href="#" class="navigation__logout-link">
+            <i class="navigation__logout-icon icon fas fa-bed"></i>
+            <span>Log out</span>
+        </a>
+    </div>
+
+
+    <div class="dispute_inbox_container">
+        <div class="disputes_names disputes_dropdown_container">
+            <span id="dispute_names">
+            <P class="lancer_name">DAVID</P> &nbsp;  &nbsp; <p>VS</p>  &nbsp; &nbsp; <p class="client_name">CHRISTOPHER</p>
+        </span>
+            <div class="dispute_button_dropdown">
+                <span class="dispute__dropdown ">
+                    <i class="fas fa-chevron-down"></i>
+    
+                </span>
+                <div class="modal_dropdown">
+                    <ul>
+                      <a href="#" class="popup">  <li>Ban Client <span><i class="fas fa-ban "></i></span></li></a>
+                      <a href="" class="pop">  <li>Ban User <span><i class="fas fa-ban"></i></span></li></a>
+                      <a href=""> <li>Message Client <span><i class="fas fa-envelope-open-text"></i></span></li></a> 
+                      <a href=""> <li>Message User <span><i class="fas fa-envelope-open-text"></i></span></li></a> 
+                      <a href=""> <li>View Client Profile <span><i class="fas fa-address-card"></i></span></li></a> 
+                      <a href="">  <li>View User Profile <span><i class="fas fa-address-card"></i></span></li></a>
+                    </ul>
+                </div>
+            </div>
+       
+
+        </div>
+        <div class="dispute_wrapper">
+            <div class="idspute_chats">
+                               
+                <div id="message-container">
+                    <div id="chat-message-list">
+
+                            <div class="message-row admin-message">
+                                <div class="message-text">
+                                    ok then
+                                </div>
+                                <div class="message-text">
+                                    ok then, would see what we can do
+                                </div>
+                                <div class="message-time">
+                                    Apr 14
+                                </div>
+                            </div>
+                            <div class="message-row users-message">
+                                <div class="message-text">
+                                    Hello Admin, am having a problem with my count i would like you to help me pls
+                                </div>
+                                <div class="message-time">
+                                    Apr 14
+                                </div>
+                            </div>
+                            
+                            <div class="message-row admin-message">
+                                <div class="message-text">
+                                    ok then
+                                </div>
+                                <div class="message-time">
+                                    Apr 14
+                                </div>
+                            </div>
+                            <div class="message-row users-message">
+                                <div class="message-text">
+                                    Hello Admin, am having a problem with my count i would like you to help me pls
+                                </div>
+                                <div class="message-time">
+                                    Apr 14
+                                </div>
+                            </div>
+                            
+                            <div class="message-row admin-message">
+                                <div class="message-text">
+                                    ok then
+                                </div>
+                                <div class="message-time">
+                                    Apr 14
+                                </div>
+                            </div>
+                            <div class="message-row users-message">
+                                <div class="message-text">
+                                    Hello Admin, am having a problem with my count i would like you to help me pls
+                                </div>
+                                <div class="message-time">
+                                    Apr 14
+                                </div>
+                            </div>
+                            
+                    </div>
+                    <div id="chat-form">
+                        <label for="file-input">
+                            <i class="fas fa-paperclip"></i>
+                    </label>
+                        <input type="file" id="file-input" class="attach-file">
+                        <input type="text" placeholder="Type a message....." >
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" modal  hidden">
+        <i class="fas fa-exclamation-triangle"></i>
+            <p>
+              ARE YOU SURE YOU WANT TO DELETE USER
+            </p>
+           
+       <div class="modal_back  decisive">
+           <ul>
+               <a href="#"><li>Yes</li></a>
+               <a href="#"><li>No</li></a>
+           </ul>
+       </div>
+    </div>
+    <div class=" modal mode  hidden">
+        <i class="fas fa-exclamation-triangle"></i>
+            <p>
+              ARE YOU SURE YOU WANT TO BAN USER
+            </p>
+           
+       <div class="modal_back  decisive">
+           <ul>
+               <a href="#"><li>Yes</li></a>
+               <a href="#"><li>No</li></a>
+           </ul>
+       </div>
+    </div>
+    
+    <footer>
+        <p>Lancerpoint</p>
+    </footer> 
+    <div class="overlay hidden">
+
+    </div> 
+    <script src="../script/successful_modal.js"></script>
+    <script src="../script/modalDrop.js"></script>
+
+</body>
+</html>

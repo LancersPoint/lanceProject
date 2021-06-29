@@ -1,0 +1,318 @@
+
+
+.user_profile-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-gap: 10px;
+    height: 100vh;
+    padding: 50px 30px 20px 30px;
+}
+
+
+.user{
+    border: 1px solid;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.user_details_container{
+    text-align: center;
+}
+
+.user_details_profile img{
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    height: 100px;
+}
+
+.user_details_profile {
+    position: relative;
+}
+
+.user_details_image{
+    position: relative;
+}
+
+.verified_user{
+    position: absolute;
+    transform: translateX(-19px);
+}
+
+.username{
+    font-weight: 600;
+}
+
+.user_options{
+    position: absolute;
+   top: 0;
+    transform: translateX(80px);
+
+}
+
+.projects{
+    display: inline-flex;
+    font-size: 1.3rem;
+    padding: 10px;
+    text-align: center;
+}
+
+.completed_project{
+    padding: 10px;
+    border-right: 1px solid;
+
+    & p{
+        font-size: 12px;
+    }
+}
+
+
+.posted_projects{
+    padding: 10px;
+}
+
+.decision{
+    display: inline-block;
+    margin: 20px 0 0 0;
+
+    & a{
+        text-decoration: none;
+        background: #28b34b;
+        border-radius: 3px;
+        font-size: 12px;
+     
+    }
+}
+.btn{
+    padding: 5px 20px;
+    color: #fff;
+}
+
+.user_details{
+    // background-color: grey;
+    border: 1px solid;
+
+}
+
+.user_message{
+    overflow: scroll;
+    border: 1px solid;
+}
+
+.user_message_head{
+    position: fixed;
+}
+
+#chat-message-list{
+    height: 90%;
+}
+
+
+#chat-form input{
+    width: 70%;
+}
+.user_wallet{
+
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.wallet-pay{
+    margin-bottom: 20px;
+    padding: 0 0 10px 15px;
+    font-size: 1.3rem;
+    justify-content: center;
+
+    & a{
+        background: #28b34b;
+        padding: 5px 30px;
+        text-decoration: none;
+        color: #fff;
+        border-radius: 3px;
+        justify-content: end;
+    }
+
+    & input{
+        border: none;
+        border-bottom: 1px solid;
+        outline: none;
+        width: 7vw;
+    }
+}
+
+.wallet-head{
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.wallet-balance{
+    margin-bottom: 30px;
+}
+
+.wallet-withdraw{
+    margin-bottom: 30px;
+}
+
+#total-balance{
+    color: chartreuse;
+}
+
+.dollar-sign{
+    font-weight: 600;
+}
+
+
+.user_files_download{
+border: 1px solid black;
+border-radius: 3px;
+}
+
+.user_contact_info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 60px;
+    padding: 20px;
+}
+
+.user_contact_info{
+    font-size: 1.2rem;
+    color: black;
+}
+
+.user_contact__head{
+    display: inline-block;
+    font-weight: 600;
+}
+
+.history{
+    padding: 1em;
+    color: #222;
+    border: 1px solid black;
+    border-radius: 3px;
+
+    &__header{
+        text-transform: capitalize;
+        font-weight: 400;
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+   &__list{
+       list-style: none;
+       overflow: auto;
+       height: 30vh;
+   }
+
+   &__item{
+       padding: 0 2rem;
+       font-size: 1.4rem;
+       display: flex;
+      position: relative;
+      color: grey;
+
+
+      &__date{
+          position: absolute;
+          left: 0;
+      }
+
+      &__update{
+          position: absolute;
+          right: 0;
+      }
+       
+
+       &:not(:last-child){
+           border-bottom: 1px solid #222;
+           margin-bottom: 3.5rem;
+       }
+   }
+
+   &__date{
+       margin-right: auto;
+   }
+}
+
+.history__date{
+    position: absolute;
+    left: 0;
+}
+
+.user_files{
+    overflow: scroll;
+    height: 32vh;
+    margin: auto;
+    padding: 5px;
+    color: black;
+    font-size: 1.3rem;
+}
+
+.files{
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.download_head{
+    font-size: 2rem;
+    padding: 5px;
+    color: black;
+}
+
+.user_profile_dropdown{
+  position: absolute;
+  top: 9vh;
+  left: 10vw;
+
+  & a li{
+      text-align: start;
+  }
+}
+
+#unpaid{
+    background-color: grey;
+    padding: 5px;
+    position: absolute;
+    top: 8px;
+    left: -12px;
+    border-radius: 5px
+}
+
+
+
+.wallet__history li:hover{
+    opacity:1.0;
+
+box-shadow:none;
+}
+
+.inbox-stats_count{
+    font-size: 1.2rem;
+    border-top: none;
+}
+
+#total_balance{
+    color: #28b34b;
+}
+
+.bal{
+    border-bottom: 1px solid black;
+
+}
+
+.profile-height{
+    height: 20vh;
+}
+
+textarea::placeholder{
+    margin-top: 200px;
+}
+
+.dispute_card__link{
+    display: block;
+}

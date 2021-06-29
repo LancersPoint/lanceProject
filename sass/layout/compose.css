@@ -1,0 +1,63 @@
+.inbox_compose_border {
+  border: 1px solid #c2c2c2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  height: 70vh;
+  margin: 10px 0 0 30px;
+  width: 100%;
+}
+
+.inbox_compose_header {
+  height: 20%;
+  margin: 20px 0 0 40px;
+  position: relative;
+}
+
+.inbox_compose_header input {
+  width: 90%;
+  padding: 5px;
+  margin: 5px;
+  outline: none;
+}
+
+.inbox_message-body {
+  margin-top: 20px;
+}
+
+.inbox_message-body input {
+  height: 20vh;
+}
+
+.inbox_message-body::-webkit-input-placeholder {
+  margin-top: -70px;
+}
+
+.inbox_message-body:-ms-input-placeholder {
+  margin-top: -70px;
+}
+
+.inbox_message-body::-ms-input-placeholder {
+  margin-top: -70px;
+}
+
+.inbox_message-body::placeholder {
+  margin-top: -70px;
+}
+
+.send_message {
+  margin: 20px 0 0 0;
+  position: absolute;
+  right: 6rem;
+}
+
+.send_message a {
+  text-decoration: none;
+  padding: 5px 40px;
+  background: #05b73d;
+  color: #fff;
+  border-radius: 3px;
+}
+/*# sourceMappingURL=compose.css.map */
