@@ -1,0 +1,104 @@
+.hamburger {
+    display: none; }
+    .hamburger__button {
+      display: none;
+      position: fixed;
+      z-index: 99;
+      top: 3rem;
+      right: 3rem;
+      width: 5rem;
+      height: 5rem;
+      background-color: var(--color-primary);
+      place-content: center;
+      border-radius: 50%; }
+      @media screen and (max-width: 56.25em) {
+        .hamburger__button {
+          display: grid; } }
+    .hamburger__line {
+      width: 2.5rem;
+      height: 2px;
+      background: var(--color-accent);
+      display: block; }
+      .hamburger__line:not(:last-child) {
+        margin-bottom: .5rem; }
+    @media screen and (max-width: 56.25em) {
+      .hamburger:checked ~ .navigation {
+        display: block; } }
+  
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5rem;
+    font-size: 1.3rem; }
+    @media screen and (max-width: 56.25em) {
+      .navigation {
+        position: fixed;
+        display: none;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 20;
+        background-color: red; } }
+    .navigation__logo {
+      height: 5rem;
+      object-fit: cover; }
+    .navigation__search {
+      border-bottom: 1px solid var(--color-grey);
+      width: 25%;
+      display: flex;
+      align-items: center; }
+    .navigation__input {
+      font-size: 1.2rem;
+      padding: .8rem;
+      border: none;
+      font-family: var(--default-font);
+      width: 80%; }
+      .navigation__input:focus {
+        outline: none; }
+    .navigation__dropdown-btn, .navigation__search-btn {
+      border: none;
+      outline: none;
+      background-color: transparent;
+      cursor: pointer; }
+    .navigation__dropdown-icon, .navigation__search-icon {
+      height: 2rem;
+      width: 2rem;
+      fill: var(--color-dark); }
+    .navigation__list {
+      list-style: none;
+      display: flex; }
+    .navigation__item {
+      margin-left: 4rem;
+      display: flex;
+      align-items: center; }
+    .navigation__link:link, .navigation__link:visited {
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: var(--color-dark);
+      font-family: var(--default-font); }
+      @media only screen and (max-width: 75em) {
+        .navigation__link:link, .navigation__link:visited {
+          font-size: 1rem; } }
+    .navigation__dropdown-btn {
+      margin-left: .5rem; }
+    .navigation__cta:link, .navigation__cta:visited {
+      font-size: 1.1rem;
+      text-decoration: none;
+      padding: 1rem 4rem;
+      background-color: var(--color-primary);
+      color: #fff;
+      border-radius: 50px;
+      cursor: pointer;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center; }
+    .navigation__login-icon {
+      height: 1.3rem;
+      width: 1.3rem;
+      fill: currentColor;
+      margin-left: .5rem; }
+  
