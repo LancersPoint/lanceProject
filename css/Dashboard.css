@@ -40,7 +40,8 @@ main {
       grid-template-areas: 'aside'
  'main-overview'
  'footer';
-  height: 90rem;
+  height: 100vh;
+  max-height: 120vh;
 }
 
 body {
@@ -50,6 +51,7 @@ body {
   line-height: 1.7;
   color: #777;
 }
+
 
 .u-center-text {
   text-align: center !important;
@@ -95,6 +97,12 @@ body {
   font-size: 1.5rem;
 }
 
+.aside__item a{
+  text-decoration: none;
+  display: flex;
+  color: #333;
+}
+
 .aside__item.active {
   background-color: #bbfce3;
   border-left: 6px solid #00be4c;
@@ -107,6 +115,7 @@ body {
 .aside__link {
   text-decoration: none;
   color: #333;
+  margin: 5px;
 }
 
 .icon {
@@ -319,6 +328,8 @@ body {
   width: 100%;
   height: 70rem;
   overflow: scroll;
+  padding: 20px;
+  background-color: rgb(238, 250, 255);
 }
 
 .dasboard-container .main-overview {
@@ -566,7 +577,17 @@ body {
 }
 /*# sourceMappingURL=main.css.map */
 
-@media only screen and (max-width: 1190px) {
+@media only screen and (max-width: 1190px){
+
+}
+
+@media only screen and (max-width: 1196px) {
+  .dasboard-container{
+    margin-left: auto;
+    width: 70%;
+    padding: 30px;
+}
+  
   .dasboard-container .main-overview {
     display: -ms-grid;
     display: grid;
@@ -640,16 +661,14 @@ body {
 }
 
 @media only screen and (max-width: 1024px){
-  .dasboard-container .ia-and-ts-container{
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: ;
-    grid-template-columns: 62% 38% ;
-    grid-gap: 2rem;
-  }
+  
 }
 
-@media only screen and (max-width: 990px){
+@media only screen and (max-width: 1033px){
+  main {
+    height: 100vh;
+  }
+  
   .dasboard-container .headline{
     font-size: 2.2rem;
   }
@@ -664,7 +683,7 @@ body {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: ;
-    grid-template-columns: 52% 42% ;
+    grid-template-columns: 52% 46% ;
     grid-gap: 2rem;
    
   }
@@ -677,8 +696,17 @@ body {
     grid-gap: 2rem;
   }
 
-  main {
-    height: 100rem;
+ 
+}
+
+@media only screen and (max-width: 936px){
+  .dasboard-container .main-overview {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: ;
+    grid-template-columns: 100% ;
+    grid-gap: 2rem;
+   
   }
 }
 
@@ -687,7 +715,12 @@ body {
     
   
   }
-  
+
+  .dasboard-container{
+    margin-left: auto;
+    width: 60%;
+    padding: 30px;
+  }
   .dasboard-container .main-overview {
     display: -ms-grid;
     display: grid;

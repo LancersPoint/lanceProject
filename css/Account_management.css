@@ -40,7 +40,7 @@ main {
       grid-template-areas: 'aside'
  'main-overview'
  'footer';
-  height: 100vh;
+  height: 100rem;
 }
 
 body {
@@ -889,7 +889,7 @@ body {
 
 @media only screen and (max-width: 1024px){
   main {
-    height: 120rem;
+    height: 100vh;
   }
 }
 
@@ -904,7 +904,7 @@ body {
 
 @media only screen and (max-width: 768px){
   main {
-    height: 150rem;
+    height: 140rem;
   }
  
   .settings-container .accounts-details-container{

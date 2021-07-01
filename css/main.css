@@ -223,6 +223,12 @@ p i {
   font-size: 1.5rem;
 }
 
+.aside__item a{
+  text-decoration: none;
+  display: flex;
+  color: #333;
+}
+
 .aside__item.active {
   background-color: #bbfce3;
   border-left: 6px solid #00be4c;
@@ -235,6 +241,7 @@ p i {
 .aside__link {
   text-decoration: none;
   color: #333;
+  margin: 5px;
 }
 
 .icon {
