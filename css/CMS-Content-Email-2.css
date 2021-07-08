@@ -331,13 +331,18 @@ body {
   padding: 10px;
 }
 
-.CMS-content-2-container .title-and-analytics-container .title-container p{
+.CMS-content-2-container .title-and-analytics-container .title-container .title-input{
   padding: 10px;
   font-size: 1.5rem;
   color: #333;
   border: 1px solid rgb(124, 124, 124);
   font-weight: 900;
   width: 100%;
+}
+
+.CMS-content-2-container .title-and-analytics-container .title-container .title-input:focus {
+  border: 1px solid #00be4c;
+  outline: #00be4c;
 }
 
 .CMS-content-2-container .drag-and-drop-container .drag-and-drop-content .dpp-container{
@@ -689,6 +694,11 @@ body {
   width: 100%;
 }
 
+.CMS-content-2-container .drag-and-drop-container form input:focus{
+  border: 1px solid #00be4c;
+  outline: #00be4c;
+}
+
 .CMS-content-2-container .drag-and-drop-container form .from-container, .preview-text-container, .notes-container {
   padding-bottom: 2rem;
   width: 100%;
@@ -704,6 +714,10 @@ body {
     width: 100%;
     padding: 10px;
     border: 1px solid rgb(153, 153, 153);
+}
+.CMS-content-2-container .drag-and-drop-container form .from-container input:focus, .preview-text-container input:focus, .notes-container textarea:focus{
+  border: 1px solid #00be4c;
+  outline: #00be4c;
 }
 
 .CMS-content-2-container .drag-and-drop-container .drag-and-drop-content{
@@ -836,4 +850,10 @@ body {
   font-size: 1rem;
   margin: 5px;
 }
+}
+
+@media only screen and (max-width: 758px){
+  html{
+    display: none;
+  }
 }

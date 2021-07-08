@@ -531,3 +531,9 @@ body {
     height: 100rem;
   }
 }
+
+@media only screen and (max-width: 758px){
+  html{
+    display: none;
+  }
+}

@@ -670,4 +670,8 @@ margin-top: -10px;
 /* --Project Information CSS-- */
 /* //////////////////// */
 
-  
+@media only screen and (max-width: 758px){
+  html{
+    display: none;
+  }
+} 

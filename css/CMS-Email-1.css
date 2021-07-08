@@ -488,3 +488,9 @@ body {
       padding: 10px;
 }
 }
+
+@media only screen and (max-width: 758px){
+  html{
+    display: none;
+  }
+}

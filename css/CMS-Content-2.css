@@ -331,12 +331,17 @@ body {
   padding: 10px;
 }
 
-.CMS-content-2-container .title-and-analytics-container .title-container p{
+.CMS-content-2-container .title-and-analytics-container .title-container .title-input{
   padding: 10px;
   font-size: 1.5rem;
   color: #333;
   border: 1px solid rgb(124, 124, 124);
   width: 100%;
+}
+
+.CMS-content-2-container .title-and-analytics-container .title-container .title-input:focus{
+  outline: #00be4c;
+  border: 1px solid #00be4c;
 }
 
 .CMS-content-2-container .title-and-analytics-container .title-container .dpp-container{
@@ -762,5 +767,11 @@ body {
   .donut__label__heading {
     font-size: 1.6rem;
     font-weight: 600;
+  }
+}
+
+@media only screen and (max-width: 758px){
+  html{
+    display: none;
   }
 }

@@ -25,6 +25,11 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+          font-family: "Raleway", "segoe UI";
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.7;
+  color: #777;
 }
 
 main {
@@ -79,7 +84,7 @@ body {
 
 .aside {
   display: inline-block;
-  width: 32rem;
+  width: 25%;
   height: 100%;
   background: #fffffff4 !important;
 }
@@ -91,10 +96,10 @@ body {
 
 .aside__item {
   color: #333;
-  padding: 1.7rem;
+  padding: 1.6rem;
   border-left: 6px solid transparent;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .aside__item a{
@@ -109,7 +114,7 @@ body {
 }
 
 .aside__icon {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 
 .aside__link {
@@ -133,7 +138,6 @@ body {
 
 .icon--notify.active::after {
   content: "";
-  background: #F79F1F;
   position: absolute;
   right: 0;
   top: 0;
@@ -711,11 +715,7 @@ body {
 }
 
 @media only screen and (max-width: 768px){
-  main {
-    
   
-  }
-
   .dasboard-container{
     margin-left: auto;
     width: 60%;
@@ -728,5 +728,11 @@ body {
     grid-template-columns: 100% ;
     grid-gap: 2rem;
    
+  }
+}
+
+@media only screen and (max-width: 758px){
+  html{
+    display: none;
   }
 }
